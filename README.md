@@ -1,3 +1,15 @@
+# npm
+Error : 
+```
+npm ERR! shasum check failed for ...\aws-sdk-2.82.0.tgz
+npm ERR! Expected: a94cfe90c15ee0e403f00f0665dccb98aa93e1f8
+npm ERR! Actual:   389d0fbf87429007d3bd3e0293d883fcca84b529
+npm ERR! From:     http://xxxxx/aws-sdk-2.82.0.tgz
+```
+Try :
+``
+npm cache clean
+``
 # ios
 Error when app unable to load local src from WebView, try this Info.plist:
 ```
@@ -18,3 +30,4 @@ Error when app unable to load local src from WebView, try this Info.plist:
 		</dict>
 	</dict>
 ```
+
