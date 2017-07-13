@@ -1,3 +1,16 @@
+
+# jenkins pipeline
+To allowing Java packages in pipeline scripts : 
+```
+import java.text.SimpleDateFormat
+
+node {
+    def dateFormat = new SimpleDateFormat("yyyyMMddHHmm")
+    println(new Date())
+}
+```
+Just approve the package via `YOUR_JENKINS_URL/scriptApproval`
+
 # npm
 Error : 
 ```
