@@ -1,4 +1,9 @@
 
+# when your openssl base64 sucks
+```
+node -e "process.stdout.write(new Buffer(process.argv[1]).toString('base64'))" "batman1234"
+```
+
 # jenkins pipeline
 To allowing Java packages in pipeline scripts : 
 ```
