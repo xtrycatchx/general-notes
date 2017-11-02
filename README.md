@@ -3,6 +3,9 @@
 ```
 node -e "process.stdout.write(new Buffer(process.argv[1]).toString('base64'))" "batman1234"
 ```
+```bash
+node -e "process.stdout.write(Buffer.from(process.argv[1], 'base64').toString('utf8'))" "YmF0bWFuMTIzNA=="
+```
 
 # jenkins pipeline
 To allowing Java packages in pipeline scripts : 
