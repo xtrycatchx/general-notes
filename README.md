@@ -1,3 +1,7 @@
+# destroy
+```
+npm ls -gp --depth=0 | awk -F/ '/node_modules/ && !/\/npm$/ {print $NF}' | xargs npm -g rm
+```
 
 # when your openssl base64 sucks
 ```
