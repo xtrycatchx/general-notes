@@ -11,6 +11,11 @@ node -e "process.stdout.write(new Buffer(process.argv[1]).toString('base64'))" "
 node -e "process.stdout.write(Buffer.from(process.argv[1], 'base64').toString('utf8'))" "YmF0bWFuMTIzNA=="
 ```
 
+# quick bash with docker
+```
+docker run -it ubuntu:16.04 /bin/bash
+```
+
 # jenkins pipeline
 To allowing Java packages in pipeline scripts : 
 ```
