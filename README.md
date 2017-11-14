@@ -10,6 +10,10 @@ node -e "process.stdout.write(new Buffer(process.argv[1]).toString('base64'))" "
 ```bash
 node -e "process.stdout.write(Buffer.from(process.argv[1], 'base64').toString('utf8'))" "YmF0bWFuMTIzNA=="
 ```
+# generate keys
+```
+openssl req -newkey rsa:2048 -nodes -keyout key.pem -x509 -days 365 -out certificate.pem
+```
 
 # quick bash with docker
 ```
