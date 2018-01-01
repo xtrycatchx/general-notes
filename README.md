@@ -170,3 +170,8 @@ Convert a PEM certificate file and a private key to PKCS#12 (.pfx .p12)
 openssl pkcs12 -export -out server.pfx -inkey server.key -in server.crt -certfile CACert.crt
 ```
 
+Check URL cert
+```
+echo | openssl s_client -showcerts -servername gnupg.org -connect bass.bnshosting.net:443 2>/dev/null | openssl x509 -inform pem -noout -text
+```
+
