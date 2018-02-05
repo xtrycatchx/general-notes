@@ -90,6 +90,10 @@ Generate a certificate signing request (CSR) for an existing private key
 ```
 openssl req -out server.csr -key server.key -new
 ```
+Sign a CSR
+```
+openssl x509 -req -days 360 -in verifier.csr -CA rootCA.pem -CAkey rootCA.key -CAcreateserial -out verifier.pem
+```
 
 Generate a certificate signing request based on an existing certificate
 ```
