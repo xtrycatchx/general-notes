@@ -179,3 +179,7 @@ Check URL cert
 echo | openssl s_client -showcerts -servername gnupg.org -connect bass.bnshosting.net:443 2>/dev/null | openssl x509 -inform pem -noout -text
 ```
 
+# when you forget wifi password in Mac
+```
+security find-generic-password -ga "MY_ROUTER" | grep "password:"
+```
