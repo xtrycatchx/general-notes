@@ -183,3 +183,8 @@ echo | openssl s_client -showcerts -servername gnupg.org -connect bass.bnshostin
 ```
 security find-generic-password -ga "MY_ROUTER" | grep "password:"
 ```
+# check target server support gzip or deflate compression
+```sh
+curl -s -I -L -H 'Accept-Encoding: gzip,deflate' https://target-server/
+```
+
