@@ -188,3 +188,8 @@ security find-generic-password -ga "MY_ROUTER" | grep "password:"
 curl -s -I -L -H 'Accept-Encoding: gzip,deflate' https://target-server/
 ```
 
+# curl with payload from file
+```sh
+curl -v -D -s POST http://localhost:8884/api/x -H 'content-type: application/json' -d@xyz.json
+```
+
