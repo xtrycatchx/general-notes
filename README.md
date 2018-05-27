@@ -69,6 +69,10 @@ Error when app unable to load local src from WebView, try this Info.plist:
      </dict>
    </dict>
 ```
+# RN release / real device
+```sh
+react-native run-ios --device “xtrycatchx” --configuration Release
+```
 
 # open ssl common
 Create a private key
