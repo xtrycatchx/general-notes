@@ -196,4 +196,7 @@ curl -s -I -L -H 'Accept-Encoding: gzip,deflate' https://target-server/
 ```sh
 curl -v -D -s POST http://localhost:8884/api/x -H 'content-type: application/json' -d@xyz.json
 ```
-
+# openshift secrets
+```sh
+oc create secret generic my-secret-config --from-file=config=/location/of/my/config --from-file=credentials=/location/of/my/credentials --type=Opaque
+```
